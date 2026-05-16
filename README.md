@@ -3,9 +3,9 @@
 
 # Integrantes del Equipo
 
-P1 - Líder y Organizador (Hugo) = Gobernanza del repositorio y estructura inicial.
-P2 - Desarrollador Técnico (Paco) = Scripts de análisis estadístico.
-P3 - Revisor y QA (Luis) = Peer review, documentación y Pull Requests.
+- P1 - Líder y Organizador (Hugo) = Gobernanza del repositorio y estructura inicial.
+- P2 - Desarrollador Técnico (Paco) = Scripts de análisis estadístico.
+- P3 - Revisor y QA (Luis) = Peer review, documentación y Pull Requests.
 
 # Escenario Elegido
 
