@@ -3,7 +3,7 @@ import pandas as pd #Importa la biblioteca de pandas, para el analisis del DataS
 import matplotlib.pyplot as plt #Importa la biblioteca de matplotlib, para la elaboracion del grafico.
 import os
 
-RUTA_DATOS     = "../datos/dataset.csv"
+RUTA_DATOS = "../datos/dataset.csv"
 RUTA_RESULTADO = "../resultados/"
 os.makedirs(RUTA_RESULTADO, exist_ok=True)
 
@@ -24,11 +24,11 @@ mes = df["sales_date"].dt.to_period("M") #Convierte las fechas de la columna sal
 ventas_por_mes = df.groupby(mes)["sales_amount"].sum().reset_index() #Agrupa los datos del DataSet por mes y suma los valores de la columna de sales_amount
 
 print("INDICADORES DE VENTAS") #Imprime por pantalla los indicadores
-print("Ventas totales: ${total_ventas:,.0f}")
-print("Promedio diario: ${promedio_diario:,.0f}")
-print("Día mayor venta: {dia_mayor_venta} (${monto_max:,.0f})")
-print("Día menor venta: {dia_menor_venta} (${monto_min:,.0f})")
-print("Ventas por mes: {ventas_por_mes.to_string(index=False)}")
+print(f"Ventas totales: ${total_ventas:,.0f}")
+print(f"Promedio diario: ${promedio_diario:,.0f}")
+print(f"Día mayor venta: {dia_mayor_venta} (${monto_max:,.0f})")
+print(f"Día menor venta: {dia_menor_venta} (${monto_min:,.0f})")
+print(f"Ventas por mes: {ventas_por_mes.to_string(index=False)}")
 
 fig, ax = plt.subplots(figsize=(8, 5))
 ventas_por_mes.plot(kind="bar", ax=ax) #Utiliza los datos de la variable ventas_por_mes para dibujar un grafico de barras
