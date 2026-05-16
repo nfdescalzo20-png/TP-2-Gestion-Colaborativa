@@ -1,8 +1,9 @@
 
+
 import pandas as pd #Importa la biblioteca de pandas, para el analisis del DataSet.
 import matplotlib.pyplot as plt #Importa la biblioteca de matplotlib, para la elaboracion del grafico.
 
-df = pd.read_csv("datos/dataset.csv", parse_dates=['sales_date'])
+df = pd.read_csv("datos/dataset.csv", parse_dates=['sales_date']) #Variable con el contenido del archivo csv
 
 total_ventas = df["sales_amount"].sum() #Calcula la suma los valores en la columna sales_amount
 promedio_diario = df["sales_amount"].mean() #Calcula la Media de los valores en la columna sales_amount
