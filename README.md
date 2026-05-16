@@ -15,7 +15,7 @@ Escenario B – Análisis de Ventas de una Pequeña Empresa
 
 - Archivo = `datos/dataset.csv`
 - Registros = 100 filas
-- Columnas = fecha, producto, cantidad, precio, venta_total
+- Columnas = id, sales_date, sales_amount
 
 # Instrucciones para Ejecutar el Script en Google Colab
 
